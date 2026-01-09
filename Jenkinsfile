@@ -11,7 +11,7 @@ pipeline {
         stage('Deploy to S3') {
             steps {
                 sh '''
-                  aws s3 sync . s3://jenkins-s3-demo-yourname-001 \
+                  aws s3 sync . s3://jenkins-s3-mahes-001 \
                   --delete \
                   --exclude ".git/*" \
                   --exclude "Jenkinsfile"
